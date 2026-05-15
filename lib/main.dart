@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpj/Tables/BranchList.dart';
+import 'package:flutterpj/Tables/DepartmentList.dart';
 import 'package:flutterpj/Forms/BranchForm.dart';
 
 void main() {
@@ -11,9 +13,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
-
-      
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
 
 
@@ -35,8 +37,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      debugShowCheckedModeBanner: false,
-      home: BranchForm(),
+      home: BranchListPage(),
     );
   }
 }
